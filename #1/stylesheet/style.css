@@ -1,0 +1,69 @@
+/*base*/
+body {
+	background: pink;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	border: 1px solid black;
+	width: 200px;
+	box-sizing: border-box;
+	background-color: yellow;
+	margin-top: 0;
+	padding: 10px 0px 10px 0px;
+}
+
+.box {
+	background-color: white;
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 0px 20px 0px 20px;
+	margin: 20px;
+}
+.box > h2 {
+	position: relative;
+	float: right;
+	top: -1px;
+	right: -21px;
+}
+
+#container {
+	width: 100%;
+}
+
+p {
+	clear: right;
+}
+
+
+/*desktop view*/
+@media (min-width: 992px) {
+	#s1, #s2 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/*tablet view*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#s1 {
+		float: left;
+		width: 50%;
+	}
+	#s2 {
+		float: left;
+		width: 100%;	
+	}
+}
+
+/*mobile view*/
+@media (max-width: 767px) {
+	#s1, #s2 {
+		float: left;
+		width: 100%;
+	}
+}
